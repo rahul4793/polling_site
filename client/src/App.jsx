@@ -24,7 +24,7 @@ function App() {
     setTimeout(() => setShowMessage(false), 5000);
   };
 
-  const socket = useMemo(() => io("http://localhost:5000"), []);
+  const socket = useMemo(() => io("https://polling-site-lwoa.onrender.com"), []);
 
   useEffect(() => {
     socket.on("connect", () => {
