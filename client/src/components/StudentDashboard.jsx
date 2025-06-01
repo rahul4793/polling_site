@@ -187,19 +187,23 @@ const handleNameContinue = () => {
     );
 }
 
-    if (isKickedOut) {
-        return (
-            <div className="flex flex-col items-center justify-center min-h-screen bg-red-50 font-inter p-6">
-                <h2 className="text-4xl font-bold text-red-700 mb-6">Session Disrupted</h2>
-                <p className="text-xl text-red-600 mb-8 text-center">
-                    You have been removed from this session by the teacher.
-                </p>
-                <p className="text-md text-gray-600">
-                    Please contact your teacher if you believe this is an error.
-                </p>
-            </div>
-        );
-    }
+if (isKickedOut) {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white font-inter">
+      <button
+        className="mb-8 px-6 py-2 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-semibold text-base flex items-center gap-2 shadow"
+        onClick={() => window.location.reload()} // or your own handler
+      >
+        <span className="mr-1">✨</span>
+        Poll
+      </button>
+      <h2 className="text-3xl font-bold text-black mb-3">You’ve been Kicked out !</h2>
+      <p className="text-lg text-gray-400 text-center max-w-md">
+        Looks like the teacher had removed you from the poll system. Please<br />Try again sometime.
+      </p>
+    </div>
+  );
+}
 
     return (
         <div className="p-6 bg-gray-100 min-h-screen font-inter">
