@@ -1,4 +1,7 @@
-# Live Interactive Polling & Quiz System
+# Live Interactive Polling & Quiz System URL 
+[https://polling-site-six.vercel.app/]
+
+`If the backend doesnt work send request to the polling server it will restart itself : [https://polling-site-lwoa.onrender.com/]`
 
 A real-time web application designed to facilitate interactive polling and quizzing sessions between teachers and students. Teachers can create questions, define correct answers, manage active polls, and view live results, while students can join, submit answers, and participate in real-time chat.
 
